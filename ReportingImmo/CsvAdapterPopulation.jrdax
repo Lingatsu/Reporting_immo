@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<csvDataAdapter class="net.sf.jasperreports.data.csv.CsvDataAdapterImpl">
+  <name>CsvAdapterPopulation</name>
+  <dataFile type="repositoryDataLocation">
+    <location>C:\Users\Kévin\Downloads\merged_data.csv</location>
+  </dataFile>
+  <encoding>UTF-8</encoding>
+  <recordDelimiter>
+</recordDelimiter>
+  <fieldDelimiter>,</fieldDelimiter>
+  <useFirstRowAsHeader>true</useFirstRowAsHeader>
+  <locale>en_US</locale>
+  <timeZone>Europe/Paris</timeZone>
+  <queryExecuterMode>false</queryExecuterMode>
+  <columnNames>ï»¿Exercice</columnNames>
+  <columnNames>siren</columnNames>
+  <columnNames>Code commune</columnNames>
+  <columnNames>Nom CollectivitÃ©</columnNames>
+  <columnNames>Population municipale</columnNames>
+  <columnNames>Population totale</columnNames>
+  <columnNames>Code Insee 2023 Commune</columnNames>
+  <columnNames>tranche_poids_des_logements_sociaux</columnNames>
+  <columnNames>Tranche revenu par habitant</columnNames>
+  <columnNames>Commune rurale</columnNames>
+  <columnNames>Code Officiel RÃ©gion</columnNames>
+  <columnNames>Code Officiel DÃ©partement</columnNames>
+  <columnNames>Strate population</columnNames>
+  <columnNames>Outre-mer</columnNames>
+  <columnNames>Code Officiel EPCI</columnNames>
+  <columnNames>Compte 2023 Disponible</columnNames>
+  <columnNames>Commune touristique</columnNames>
+  <columnNames>PrÃ©sence QPV</columnNames>
+  <columnNames>Commune de montagne</columnNames>
+  <columnNames>Nom Officiel Commune</columnNames>
+  <columnNames>Population totale du dernier exercice</columnNames>
+  <columnNames>Nom Officiel RÃ©gion</columnNames>
+  <columnNames>Nom Officiel DÃ©partement</columnNames>
+  <columnNames>Nom Officiel EPCI</columnNames>
+  <columnNames>annee_texte</columnNames>
+  <columnNames>com_code</columnNames>
+  <columnNames>date_mutation</columnNames>
+  <columnNames>code_postal</columnNames>
+  <columnNames>nom_commune</columnNames>
+  <columnNames>DEP</columnNames>
+  <columnNames>REG</columnNames>
+  <columnNames>loypredm2</columnNames>
+  <columnNames>lwr.IPm2</columnNames>
+  <columnNames>upr.IPm2</columnNames>
+  <columnNames>R2_adj</columnNames>
+  <columnNames>moyenne_valeur_fonciere</columnNames>
+  <columnNames>moyenne_surface</columnNames>
+  <columnNames>moncalcul</columnNames>
+  <columnNames>moncalculavecValeurRef</columnNames>
+</csvDataAdapter>

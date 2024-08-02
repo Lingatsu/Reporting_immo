@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.3.final using JasperReports Library version 6.21.3-4a3078d20785ebe464f18037d738d12fc98c13cf  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Correlation" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="545a3a65-75d0-4efb-a4aa-606012012c72">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="CsvAdapterPopulation.jrdax"/>
+	<queryString language="csv">
+		<![CDATA[]]>
+	</queryString>
+	<field name="moncalcul" class="java.math.BigDecimal"/>
+	<field name="moncalculavecValeurRef" class="java.math.BigDecimal"/>
+	<field name="moyenne_valeur_fonciere" class="java.math.BigDecimal"/>
+	<field name="moyenne_surface" class="java.math.BigDecimal"/>
+	<field name="code_postal" class="java.math.BigDecimal"/>
+	<field name="nom_commune" class="java.lang.String"/>
+	<field name="DEP" class="java.lang.Integer"/>
+	<field name="REG" class="java.lang.Integer"/>
+	<field name="Commune rurale" class="java.lang.String"/>
+	<field name="Commune touristique" class="java.lang.String"/>
+	<field name="Commune de montagne" class="java.lang.String"/>
+	<field name="Population municipale" class="java.lang.Integer"/>
+	<field name="Population totale" class="java.lang.Double"/>
+	<field name="tranche_poids_des_logements_sociaux" class="java.math.BigDecimal"/>
+	<field name="Tranche revenu par habitant" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="219" splitType="Stretch">
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="20" y="-54" width="525" height="264" uuid="8cbdb289-8f81-4434-b275-a94d9910aa16"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{DEP}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Population municipale}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>
