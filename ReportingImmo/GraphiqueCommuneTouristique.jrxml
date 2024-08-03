@@ -55,7 +55,7 @@
 				<textElement textAlignment="Center">
 					<font size="18"/>
 				</textElement>
-				<text><![CDATA[Rendement locatif par departement pour l'année 2023]]></text>
+				<text><![CDATA[Rendement locatif selon commune touristique ou non en 2023]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -78,7 +78,7 @@
 		<band height="503" splitType="Stretch">
 			<barChart>
 				<chart evaluationTime="Report">
-					<reportElement key="" isPrintRepeatedValues="false" x="3" y="0" width="555" height="503" uuid="35f6fff7-0bd1-4a79-8cc3-e6898b4f6edd">
+					<reportElement key="" isPrintRepeatedValues="false" x="3" y="0" width="555" height="503" uuid="09ed2e38-b106-47f5-b186-ab3035b5ce69">
 						<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					</reportElement>
 					<chartTitle/>
@@ -88,7 +88,7 @@
 				<categoryDataset>
 					<categorySeries>
 						<seriesExpression><![CDATA["SERIES 1"]]></seriesExpression>
-						<categoryExpression><![CDATA[$F{DEP}]]></categoryExpression>
+						<categoryExpression><![CDATA[$F{Commune touristique}]]></categoryExpression>
 						<valueExpression><![CDATA[$F{moncalcul}]]></valueExpression>
 					</categorySeries>
 				</categoryDataset>
